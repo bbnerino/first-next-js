@@ -1,14 +1,20 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-import sytles from "./Navbar.module.css"
 const Navbar = () => {
   const router = useRouter()
   return (
-    <div className={sytles.nav}>
-      <Link href='/'><a style={{color:router.pathname ==='/' &&"red"}}>Home</a></Link>
-      <Link href='/about'><a style={{color:router.pathname ==='/about' &&"red"}}>About</a></Link>
-    </div>
+    <nav color='yellow' >
+      <Link href='/'><a>Home</a></Link>
+      {/* <Link className={`${styles.aa} ${router.pathname==="/" ? sytles.active:""}`} href='/'><a style={{color:router.pathname ==='/' &&"red"}}>Home</a></Link> */}
+      <Link href='/about'><a >About</a></Link>
+
+    <style jsx>{`
+      nav{
+        background-color:yellow;
+      }
+   `}</style>
+    </nav>
   )
 }
 

@@ -4,8 +4,8 @@ import Navbar from '../component/Navbar'
 const about = () => {
   return (
     <div>
-      <Navbar/>
-      about us</div>
+      ABOUT
+    </div>
   )
 }
 
